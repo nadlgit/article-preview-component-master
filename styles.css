@@ -1,0 +1,92 @@
+@font-face {    
+    font-family: Manrope;
+    src: local("Manrope"),
+         url(fonts/Manrope/Manrope-VariableFont_wght.ttf);
+    font-weight: 500;
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: Manrope, sans-serif;
+    font-size: 13px;
+}
+#container {
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.box-article-preview-component {
+    height: 20em;
+    width: 55em;
+    position: relative;
+    margin: auto; /*centrage hoizontal*/
+}
+.article-picture {
+    height: 100%;
+    border-radius: 20px 0 0 20px; 
+}
+.box-contents {
+    background-color: white;
+    border-radius: 0 20px 20px 0;  
+    position: absolute;
+    top: 0;
+    left: 20em;
+    padding: 3em;
+    height:14em;
+}
+.article-headline {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.article-lead {
+    color: hsl(214, 17%, 51%);
+    margin: 1em 0;
+}
+.box-footer {
+    display: flex;
+    align-items: center;
+}
+.author-avatar {
+    border-radius: 100%;
+    width: 3em;
+    height: 3em;     
+}
+.box-info {
+    min-width: 50%; 
+    margin: 0 1em; 
+}
+.author-name {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+.post-date {
+    color: hsl(212, 23%, 69%);
+}
+#box-share {    
+    text-align: right;
+    width: 100%;
+    position: relative;
+}
+#box-share > .share-icon {
+    background-color: hsl(210, 46%, 95%); 
+    padding: 0.75em;     
+    border-radius: 100%;
+}
+#box-share-details {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(212, 23%, 69%);
+    border-radius: 10px; 
+    text-transform: uppercase;
+    padding: 0.5em 1.5em; 
+    width: 100%; 
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    display: none;
+}
+#box-share-details > .share-icon {
+    height: 1.5em;
+}
+#box-share-details > * {
+    vertical-align: middle;
+    margin: 0 0.1em;
+}
