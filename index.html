@@ -10,52 +10,52 @@
 
   <link href="./styles.css" rel="stylesheet">
   <script type="text/javascript">
-    function showShare() {
-      document.getElementById('box-share-details').style.display = 'block'
+    function displayShare() {
+      //document.getElementById('box-share-details').style.display = 'block'
+      //document.getElementsByClassName('share-details')[0].style.display = 'flex';
     }
   </script>
 </head>
-<body>
-  <div id="container">
-    <div class="box-article-preview-component">
-      <img class="article-picture" src="./images/drawers.jpg" alt="Drawers">
-      <div class="box-contents">
-        <div class="article-headline">
-          Shift the overall look and feel by adding these wonderful
-          touches to furniture in your home
+<body>  
+  <div id="article-preview-component">  
+    <img class="article-picture" src="./images/drawers.jpg" alt="Drawers" />
+    <div class="article-preview">
+      <div class="article-headline">
+        Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home
+      </div>
+      <div class="article-lead">
+        Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      </div>
+      <div class="article-footer">
+        <img class="author-avatar" src="./images/avatar-michelle.jpg" alt="Avatar Michelle" />
+        <div class="author-name">
+          Michelle Appleton
         </div>
-        <div class="article-lead">
-          Ever been in a room and felt like something was missing? Perhaps 
-          it felt slightly bare and uninviting. I’ve got some simple tips 
-          to help you make any room feel complete.
-        </div>
-        <div class="box-footer">
-          <img class="author-avatar" src="./images/avatar-michelle.jpg" alt="Avatar Michelle">
-          <div class="box-info">
-            <div class="author-name">
-              Michelle Appleton
-            </div>
-            <div class="post-date">
-              28 Jun 2020
-            </div>
-          </div>
-          <div id="box-share">
-            <img class="share-icon" src="./images/icon-share.svg" alt="Share" onclick="showShare()">
-            <div id="box-share-details">
-              <span>Share</span>
-              <img class="share-icon" src="./images/icon-facebook.svg" alt="Share Facebook">
-              <img class="share-icon" src="./images/icon-twitter.svg" alt="Share Twitter">
-              <img class="share-icon" src="./images/icon-pinterest.svg" alt="Share Pinterest">
-            </div>
-          </div>        
+        <div class="post-date">
+          28 Jun 2020
         </div>
       </div>
+      <div class="share">
+        <img class="share-icon" src="./images/icon-share.svg" alt="Share" onclick="displayShare()" />
+      </div>
+      <div class="share active">
+        <img class="share-icon active" src="./images/icon-share-active.svg" alt="Share" />
+      </div>
+      <div class="share-details">
+        <span>Share</span>
+        <img class="social-icon" src="./images/icon-facebook.svg" alt="Share Facebook">
+        <img class="social-icon" src="./images/icon-twitter.svg" alt="Share Twitter">
+        <img class="social-icon" src="./images/icon-pinterest.svg" alt="Share Pinterest">
+      </div>
     </div>
-    
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Nadine</a>.
-    </div>
-</div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nadine</a>.
+  </div>
 </body>
 </html>
