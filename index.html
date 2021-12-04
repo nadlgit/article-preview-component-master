@@ -11,8 +11,9 @@
   <link href="./styles.css" rel="stylesheet">
   <script type="text/javascript">
     function displayShare() {
-      //document.getElementById('box-share-details').style.display = 'block'
-      //document.getElementsByClassName('share-details')[0].style.display = 'flex';
+      document.getElementById('box-share').classList.add('hide');
+      document.getElementById('box-share-active').classList.remove('hide');
+      document.getElementById('box-share-details').classList.remove('hide');
     }
   </script>
 </head>
@@ -38,13 +39,13 @@
           28 Jun 2020
         </div>
       </div>
-      <div class="share">
+      <div id="box-share" class="share">
         <img class="share-icon" src="./images/icon-share.svg" alt="Share" onclick="displayShare()" />
       </div>
-      <div class="share active">
+      <div id="box-share-active" class="share active hide">
         <img class="share-icon active" src="./images/icon-share-active.svg" alt="Share" />
       </div>
-      <div class="share-details">
+      <div id="box-share-details" class="share-details hide">
         <span>Share</span>
         <img class="social-icon" src="./images/icon-facebook.svg" alt="Share Facebook">
         <img class="social-icon" src="./images/icon-twitter.svg" alt="Share Twitter">

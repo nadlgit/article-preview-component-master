@@ -69,9 +69,10 @@ body {
     grid-column: 2;
     grid-row: 3;
     text-align: right;
+    z-index: 2;
 }
 .share.active {
-    display: none;
+    z-index: 1;
 }
 .share-icon {
     background-color: hsl(210, 46%, 95%);
@@ -94,6 +95,9 @@ body {
     align-items: center;
     color: hsl(212, 23%, 69%);
     text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+.hide {
     display: none;
 }
 @media (min-width: 1200px) {
@@ -118,14 +122,25 @@ body {
         grid-column: 3;
         grid-row: 3;
         position: absolute;
-        top: -60px;
-        right: -90px;
+        top: -70px;
+        right: -80px;
+        /*right: -200%;*/
         margin: auto;
         height: auto;
         width: 180px;
         padding: 15px 40px;
         border-radius: 10px;
-        letter-spacing: 0.5em;
+    }
+    .share-details::before {
+        background-color: hsl(217, 19%, 35%);
+        width: 20px;
+        height: 20px;
+        content: "";
+        transform: rotate(45deg);
+        position: absolute;
+        bottom: -10px;
+        left: calc(50% - 10px);
+        z-index: 1;
     }
 }
 .attribution { font-size: 11px; text-align: center; }
